@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <style>
-    .navbar{
+    .navbar {
       margin-bottom: 0;
       border-radius: 0;
       background-color: #00924E;
@@ -26,7 +27,9 @@
       padding: 0 15px 5px;
     }
 
-    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+    .navbar-inverse .navbar-nav .active a,
+    .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
       color: #FFF;
       background-color: #00924E;
     }
@@ -34,16 +37,55 @@
     .navbar-inverse .navbar-nav li a {
       color: #D5D5D5;
     }
+
+    .carousel-caption {
+      top: 50%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+    }
+
+    .btn {
+      font-size: 18px;
+      color: #FFF;
+      padding: 12px 22px;
+      background: #AD001E;
+      border: 2px soild #FFF;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+      }
+      #icon {
+        max-width: 150px;
+      }
+      h2 {
+        font-size: 1.7em;
+        ;
+      }
+    }
+
+    .container {
+      margin
+    }
+
+    #icon {
+      max-width: 200px;
+      margin: 1% auto;
+    }
+
+    p{
+      line-height: 30px;
+    }
   </style>
 </head>
-
 
 <body>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
 
-          <button type="button" class="navbar-toggle"       data-toggle="collapse" data-target="#myNavbar">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -70,32 +112,82 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-      <img class="img-responsive" src="img/pizza copy.jpg">
-      <div class="carousel-caption">
-        <h1>Mama Mia's Italian Restaurant</h1>
-      <br>
-      <button type="button" class="btn btn-default">Get Started</button>
+        <img class="img-responsive" src="img/pizza copy.jpg">
+        <div class="carousel-caption">
+          <h1>Mama Mia's Italian Restaurant</h1>
+          <br>
+          <button type="button" class="btn btn-default">Get Started</button>
+        </div>
+      </div>
+      <!--- End Active -->
+      <div class="item">
+        <img class="img-responsive" src="img/slide.jpg">
+      </div>
+      <div class="item">
+        <img class="img-responsive" src="img/pasta copy.jpg">
+      </div>
     </div>
-  </div> <!--- End Active -->
-    <div class="item">
-      <img class="img-responsive" src="img/slide.jpg">
-    </div>
-    <div class="item">
-      <img class="img-responsive" src="img/pasta copy.jpg">
-    </div>
-  </div>
-  <!--- Start of slider controls-->
-  <a class="left carousel-control" href="myCarousel" role="button" data-slide="prev">
+    <!--- Start of slider controls-->
+    <a class="left carousel-control" href="myCarousel" role="button" data-slide="prev">
     <span class ="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="myCarousel" role="button" data-slide="next">
+    <a class="right carousel-control" href="myCarousel" role="button" data-slide="next">
     <span class ="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  </div>
+  <!--- End Slider -->
 
-</div><!----- End Slider -->
+  <div class="container text-center">
+    <h2>Mama Mia's Favs</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="img/Spaghetti_vongole_.jpg" id="icon">
+        <h4>Clam & Pasta</h4>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/pasta.jpg" id="icon">
+        <h4>Tuscon Sausage Pasta</h4>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/steak.jpg" id="icon">
+        <h4>Sirloin</h4>
+      </div>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Mama Mia's promise to you</h4>
+        <p>To make delicious and remarkable food. That the food we sell meets the highest standards of quality, freshness and seasonality and combines both modern-creative and traditional Italian styles of cooking. To consistently provide our customers with impeccable service by demonstrating warmth, graciousness, efficiency, knowledge, professionalism and integrity in our work. To have every customer who comes through our doors leave impressed by Mama Mia's and excited to come back again.</p>
+        <p>To create and maintain a restaurant that is comprehensive and exceptional in its attention to every detail of operation. To keep our concept fresh, exciting and on the cutting edge of hospitality. To be a giving member of the community and to use our restaurant to improve the quality of life in the local area.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/restaurantmission.jpg" class="img-responsive">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h4>Mama Mia's Awards </h4>
+        <p>Only the best of the best hotels, restaurants and other points of interests within the travel industry are nominated for the Travel Advisory Awards. After registering the nomination for the award, the company or establishment will receive an official certificate and an exclusive golden plate and also get access to use the Travel Advisory Awards logo in their marketing channels.</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img src="img/award.png" class="img-responsive">
+      </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <h4>Mama Mia's Awards </h4>
+      <p>Mama Mia's restaurant has been selected by OpenTable diners as one of the best. Our Diners’ Choice Award lists are designed to celebrate top-rated restaurants, giving them greater visibility on OpenTable.com. Each month we feature Diners’ Choice winners on our website and in seasonal emails that target all of our diners.</p>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="img/winner.png" class="img-responsive">
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
